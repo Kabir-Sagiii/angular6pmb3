@@ -1,0 +1,21 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.css']
+})
+export class TestComponent implements OnInit {
+
+  title:string = "Welcome to Testing"
+
+  add(a:number,b:number):number {
+    return a + b
+  }
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
